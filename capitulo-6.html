@@ -32,7 +32,11 @@
         return (
           <div>
             <Header title="React" />
-<Header title="A new title" />
+             <ul>
+               {names.map((name) => (
+                 <li>{name}</li>
+               ))}
+             </ul>
           </div>
         );
       }
