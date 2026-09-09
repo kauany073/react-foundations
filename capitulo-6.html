@@ -24,13 +24,13 @@
       const domNode = document.getElementById('app');
 
       function Header({ title }) {
-        return <h1>{title}</h1>;
+        return <h1>{title ? title : 'Default title'}</h1>;
       }
 
       function HomePage() {
         return (
           <div>
-            <Header title="React" />
+            <Header />
           </div>
         );
       }
